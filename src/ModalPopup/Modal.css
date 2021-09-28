@@ -1,0 +1,56 @@
+.modal-pop{
+    background-color: #1F1F23;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.modal-container{
+    border-radius: 7px;
+    box-shadow: 0 0 32px rgba(0,0,0,0.5);
+    height: 400px;
+    width: 450px;
+    font-size: 26px;
+}
+
+.overlay{ 
+    background-color: rgb(0,0,0,0.5);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-button{
+    position: absolute;
+    font-size: 15px;
+    width: 40px;
+    height: 40px;
+    background-color: crimson;
+    border-radius: 50%;
+    cursor: pointer;
+    top: -1rem;
+    left: 26.5rem;
+    border: none;
+}
+
+.close-button:hover{
+    color: white;
+}
+
+@media only screen and (max-width: 530px) {
+    .modal-container{
+      width: 80vw;
+    }
+    
+    .close-button{
+        position: absolute;
+        top: -4vw;
+        left: 74vw;
+    }
+  }
