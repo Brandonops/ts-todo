@@ -69,6 +69,7 @@ export const EditTodoForm: React.FC<EditTodoFormProps> = ({ onBackdropClick, edi
           <label className="input-label" htmlFor="title" id="title">Title</label>
           <input
             value={updatedTodo.text}
+            maxLength={35}
             name="title"
             className="text-input"
             type="text"

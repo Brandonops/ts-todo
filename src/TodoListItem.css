@@ -27,6 +27,7 @@ ul.todo-ul{
   display:flex;
   width: 100%;
   align-items: center;
+  overflow-x: auto;
 }
 
 .text-complete-grp > p{
@@ -89,8 +90,8 @@ ul.todo-ul{
 }
 
 ::-webkit-scrollbar{
-  width: 13px;
-  height: 13px;
+  width: 10px;
+  height: 5px;
 }
 ::-webkit-scrollbar-thumb{
   background: #c3c4b9;
@@ -100,7 +101,7 @@ ul.todo-ul{
   background: #aa49ff;
 }
 ::-webkit-scrollbar-track{
-  margin-left: 20px;
+  margin-left: 40px;
   background: #353b3b;
   border-radius: 15px;
 }
